@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ol, ul{
+    margin-bottom: 0;
+  }
+ .link{
+    text-decoration: none;
+    color: black;
+ }
+
+  ul {
+    list-style: none;
+  }
+.container{
+    width: 1360px;
+}
+.item-1{
+    height: 569px;
+}
+.img-1{
+    height:100%;
+    object-fit: cover;
+}
+.little-container{
+    margin: 32px 93px 29px 95px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    align-items: flex-end;
+    gap: 47px;
+}
