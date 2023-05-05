@@ -14,16 +14,21 @@ body {
   ul {
     list-style: none;
   }
+  #hero-carousel{
+    margin-bottom: 0;
+  }
 .container{
     width: 1360px;
 }
 .item-1{
-    height: 569px;
+    height: 630px;
 }
 .img-1{
     height:100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit:cover;
 }
+
 .little-container{
     margin: 32px 93px 29px 95px;
 }
@@ -35,4 +40,69 @@ header{
     display: flex;
     align-items: flex-end;
     gap: 47px;
+}
+.link:hover{
+    color: white !important;
+    border: solid 10px #006cd1;
+    background-color: #006cd1;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.carousel-control-prev-icon{
+    filter: invert(100%);
+}
+.carousel-control-next-icon{
+    filter: invert(100%);
+}
+.coment{
+width: 314px;
+height: 22px;
+font-size: 18px;
+font-weight: normal;
+line-height: 37px;
+font-style: normal;
+text-align: left;
+color: #ffffff;
+}
+.heading{
+width: 588px;
+height: 89px;
+font-family: "Arial";
+font-size: 78.74051666259766px;
+font-weight: normal;
+line-height: 52.95845413208008px;
+font-style: normal;
+text-align: left;
+color: #ffffff;
+
+}
+.price{
+width: 191px;
+height: 26px;
+font-family: "Raleway";
+font-size: 21px;
+font-weight: bold;
+line-height: 37px;
+font-style: normal;
+text-align: left;
+color: #006cd1; */
+
+
+ }
+.carousel-img{
+position: absolute;
+width: 287px;
+height: 92px;
+top: 28%;
+left: 505px;
+bottom: 50%;
+}
+
+.carousel-caption{ 
+display: flex !important;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin-bottom: 11%;
+gap: 35px;
 }
