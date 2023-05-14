@@ -3,9 +3,8 @@
 <link>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width='device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Tourists Landing Page</title>
 </head>
@@ -15,7 +14,7 @@
         <div class="little-container">
             <header>
                 <div class="logo">
-                    <img src="images/Tourism.png" alt="">
+                    <a href="#"><img src="images/Tourism.png" alt=""></a>
                 </div>
                 <div class="navigation">
                     <ul class="nav-items">
@@ -26,7 +25,7 @@
                             <a href="#" class="link">ABOUT US</a>
                         </li>
                         <li class="nav-links">
-                            <a href="#" class="link">OUR SERVICES</a>
+                            <a href="#services-page" class="link">OUR SERVICES</a>
                         </li>
                         <li class="nav-links">
                             <a href="#" class="link">TOUR PACKAGE</a>
@@ -43,8 +42,6 @@
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active item-1">
-            <div class="img-gradient">
-            </div>
             <img src="images/jens-kreuter-96504-unsplash.png" class=" img-1" alt="gir with hat">
             <img  class="carousel-img" src="images/Layer 2.png" alt="shadow">
             <div class="carousel-caption">
@@ -82,10 +79,139 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
        </div>
+       <!-- cards section's code -->
+       <div class="second-section" id="services-page">
+           <div class="services">
+                <h3 class="services-h3">discover</h3>
+                <h2 class="services-h2">our hot services</h2>
+                <p class="services-description">Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's  standard</p>
+            </div>
+            <div class="cards-container">
+                <div class="modal">
+                    <div class="modal-img"> 
+                        <img class="card-img" src="" alt="">
+                </div>
+                <div class="modal-title">
+                    <h2 class="card-title"></h2>
+                </div>
+                 <div class="modal-description">
+                    <p class="card-description"></p>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!-- video section starts  here -->
+       <div class="third-section">
+            <div class="video-section">
+                <div class="video content">
+                    <h2 class="third-section-h2"> DISCOVER</h2>
+                    <H3 class="third-section-h3"> WATCH OUR VIDEO</H3>
+                </div>
+                <div class="video">
+                    <img class="video-img" src="images/rune-haugseng-727710-unsplash.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="statistic-section">
+            <div class="statistic-items">
+                <div>
+                   <img class="statistic-img" src="images/Untitled design.png" alt=""> 
+                </div>
+                <div>
+                     <h2 id="count1">120.859</h2>
+                    <p>HAPPY TRAVELERS</p>
+                </div>
+               
+            </div>
+            <div class="statistic-items">
+                <div>
+                    <img class="statistic-img" src="images/Untitled design (1).png" alt="">
+                </div>
+                <div>
+                    <h2 id="count2"> 2594</h2>
+                    <P>SATISFIED TOURS</P>
+                </div>
+                
+            </div>
+            <div class="statistic-items">
+                <div>
+                    <img class="statistic-img" src="images/Untitled design (2).png" alt="">
+                </div>
+                <div>
+                   <h2 id="count3">854</h2>
+                    <P>DESTINATION</P> 
+                </div>
+                
+            </div>
+            <div class="statistic-items">
+                <div>
+                    <img class="statistic-img" src="images/Untitled design (3).png" alt="">
+                </div>
+                <div>
+                    <h2 id="count4">978</h2>
+                    <P>HOTELS&RESORTS</P>
+                </div>
+            </div>
+        </div>
+        <hr>
 
+        <div class="fouth-section">
+            <div class="tour-packages">
+                <h3> WE OFFER</h3>
+                <h2>Popular Tour Package</h2>
+            </div>
+            <div class="tour-cards">
+                <div class="tour">
+                    <img src="images/tom-grimbert-661519-unsplash.png" alt="">
+                    <p class="package-price">
+                        $299/person
+                    </p>
+                    <h2 class="packages-title">
+                        BLUE BEUTY OF GREECE
+                    </h2>
+                    <P class="packages-description">
+                        5 days/6 nights
+                    </P>
+                </div>
+                <div class="tour">
+                    <img src="images/alex-block-429051-unsplash.png" alt="">
+                    <p class="package-price">
+                        $178/person
+                    </p>
+                    <h2 class="packages-title">
+                        NATURE OF PHUKET
+                    </h2>
+                    <P class="packages-description">
+                        3 days/4 nights
+                    </P>
+                </div>
+                <div class="tour">
+                    <img src="images/anthony-delanoix-460516-unsplash.png" alt="">
+                    <p class="package-price">
+                        $1111/person
+                    </p>
+                    <h2 class="packages-title">
+                        WORLD TOUR OF PARIS
+                    </h2>
+                    <P class="packages-description">
+                        7 days/8 nights
+                    </P>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="sale">
+                <h2>Get 10% Off on Your Next Travel</h2>
+            </div>
+            <div class="discaunt">
+                <h3>Maximum doscout 1000$ per person</h3>
+            </div>
+        </div>
     </div>
-    
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
