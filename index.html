@@ -42,6 +42,8 @@
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active item-1">
+            <div class="img-gradient">
+            </div>
             <img src="images/jens-kreuter-96504-unsplash.png" class=" img-1" alt="gir with hat">
             <img  class="carousel-img" src="images/Layer 2.png" alt="shadow">
             <div class="carousel-caption">
@@ -120,17 +122,17 @@
                    <img class="statistic-img" src="images/Untitled design.png" alt=""> 
                 </div>
                 <div>
-                     <h2 id="count1">120.859</h2>
+                     <h2 class="count-number" data-start="0"  data-end="1200" id="count1">120.859</h2>
                     <p>HAPPY TRAVELERS</p>
                 </div>
                
             </div>
             <div class="statistic-items">
                 <div>
-                    <img class="statistic-img" src="images/Untitled design (1).png" alt="">
+                    <img class="statistic-img"  src="images/Untitled design (1).png" alt="">
                 </div>
                 <div>
-                    <h2 id="count2"> 2594</h2>
+                    <h2 class="count-number" data-start="0"  data-end="1121" id="count2"> 2594</h2>
                     <P>SATISFIED TOURS</P>
                 </div>
                 
@@ -140,7 +142,7 @@
                     <img class="statistic-img" src="images/Untitled design (2).png" alt="">
                 </div>
                 <div>
-                   <h2 id="count3">854</h2>
+                   <h2  data-start="0"  data-end="854" class="count-number" id="count3">854</h2>
                     <P>DESTINATION</P> 
                 </div>
                 
@@ -150,7 +152,7 @@
                     <img class="statistic-img" src="images/Untitled design (3).png" alt="">
                 </div>
                 <div>
-                    <h2 id="count4">978</h2>
+                    <h2 class="count-number" data-start="0"  data-end="978"  id="count4">978</h2>
                     <P>HOTELS&RESORTS</P>
                 </div>
             </div>
@@ -208,6 +210,45 @@
             </div>
             <div class="discaunt">
                 <h3>Maximum doscout 1000$ per person</h3>
+            </div>
+            <form action="/submit-form" method="post">
+                <input type="email" name="input-field" id="input-field" placeholder="enter your email" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="evaluations">
+            <div class="text-content2">
+                <h3> OUR SMILES</h3>
+                <h2>Happy Travelers</h2>
+            </div>
+            <div class="evaluation-cards">
+                <div class="coments">
+                    <img class="coment-image" src="images/Layer 6.png" alt="">
+                    <h3 class="coment-name">Rebeca Singh</h3>
+                    <p class="coment2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    </p>
+                    <img class="forma" src="images/Forma 1.png" alt="">
+                </div>
+                <div class="coments">
+                    <img class="coment-image" src="images/Layer 7.png" alt="">
+                    <h3 class="coment-name">Jimmy dean</h3>
+                    <p class="coment2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    </p>
+                    <img class="forma"  src="images/Forma 1.png" alt="">
+                </div>
+                <div class="coments">
+                    <img class="coment-image" src="images/Layer 8.png" alt="">
+                    <h3 class="coment-name">Theodule Terer</h3>
+                    <p class="coment2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    </p>
+                    <img class="forma" src="images/Forma 1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="booking" width="100%">
+            <div class="booking-question">
+                <h2>Ready to plan your trip?</h2>
+                <button type="submit"> BOOK NOW </button>
             </div>
         </div>
     </div>

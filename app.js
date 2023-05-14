@@ -53,39 +53,41 @@ data.forEach(card => {
   cardsContainer.insertAdjacentHTML('beforeend', cardHtml);
 });
 
-const count1 = document.getElementById('count1');
-const count2 = document.getElementById('count2');
-const count3 = document.getElementById('count3');
-const count4 = document.getElementById('count4');
+const countItems = document.querySelectorAll('.count-number');
 
-const target1 = 1200; 
-const target2 = 2594; 
-const target3 = 854;
-const target4 = 978; 
+const options = {
+  rootMargin: '0px',
+  threshold: 0.5
+}
 
-let counter1 = 0;
-let counter2 = 0;
-let counter3 = 0;
-let counter4 = 0;
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = entry.target;
+      const endValue = parseInt(target.dataset.end);
+      let startValue = parseInt(target.dataset.start);
+      const duration = 2000; // milliseconds
+      const stepTime = Math.abs(Math.floor(duration / (endValue - startValue)));
 
-setInterval(() => {
-  if (counter1 < target1) {
-    counter1++;
-    count1.innerText = counter1;
-  }
-  if (counter2 < target2) {
-    counter2++;
-    count2.innerText = counter2;
-  }
-  if (counter3 < target3) {
-    counter3++;
-    count3.innerText = counter3;
-  }
-  if (counter4 < target4) {
-    counter4++;
-    count4.innerText = counter4;
-  }
-}, 1);
+      const countAnimation = setInterval(() => {
+        startValue += 1;
+        target.textContent = startValue;
+
+        if (startValue >= endValue) {
+          target.textContent = endValue;
+          clearInterval(countAnimation);
+        }
+      }, stepTime);
+    }
+  })
+}, options);
+
+countItems.forEach(item => {
+  observer.observe(item);
+})
+
+
+
 // // Open the modal when a card is clicked
 // cardsContainer.addEventListener('click', e => {
 //   if (e.target.classList.contains('card')) {
